@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verification Result</title>
+</head>
+<body>
+    <h1>Certificate Verification Result</h1>
+    {% if messages %}
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+    <p><a href="{% url 'verify_certificate' %}">Verify Another Certificate</a></p>
+    <p><a href="{% url 'submit_certificate' %}">Submit a Certificate</a></p>
+</body>
+</html>
